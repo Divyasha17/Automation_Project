@@ -24,11 +24,10 @@ public class Handling_Dropdown {
 		userName.sendKeys("Tester");
 		passWord.sendKeys("test");
 		File f=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(f, new File("C:\\screenshot\\screenshot2.png"));
+		FileHandler.copy(f, new File("C:\\screenshot\\screenshot.png"));
 		WebElement login = driver.findElement(By.xpath("//input[@id='ctl00_MainContent_login_button']"));
 		login.click();
-		File f1=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(f1, new File("C:\\screenshot\\screenshot3.png"));
+		
 		//File f1=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE));
 		Thread.sleep(10000);
 		System.out.print("test");
