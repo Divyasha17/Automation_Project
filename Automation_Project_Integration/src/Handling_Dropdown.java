@@ -19,8 +19,10 @@ public class Handling_Dropdown {
 		System.setProperty("webdriver.chrome.driver", "E:\\AutomationTesting\\Download\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/Login.aspx");
+		Thread.sleep(10000);
 		WebElement userName = driver.findElement(By.xpath("//input[@id='ctl00_MainContent_username']"));
 		WebElement passWord = driver.findElement(By.xpath("//input[@id='ctl00_MainContent_password']"));
+		
 		userName.sendKeys("Tester");
 		passWord.sendKeys("test");
 		File f=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
