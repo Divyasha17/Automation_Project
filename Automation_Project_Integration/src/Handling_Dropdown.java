@@ -18,8 +18,11 @@ public class Handling_Dropdown {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "E:\\AutomationTesting\\Download\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/Login.aspx");
-		Thread.sleep(10000);
+		driver.get("https://www.amazon.co.uk/?&tag=hydraamazonav-21&ref=pd_sl_1xb2hta1j6_e&adgrpid=187384300938&hvpone=&hvptwo=&hvadid=779257223991&hvpos=&hvnetw=g&hvrand=16022348130580326989&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9180695&hvtargid=kwd-11572600&hvcampaign=23073121122&hydadcr=13721_2323340_403268&mcid=8da36ddfe56437eebdff1326eb43509f&hvocijid=16022348130580326989--&hvexpln=nav&gad_source=1");
+	
+		
+		
+		/*Thread.sleep(10000);
 		WebElement userName = driver.findElement(By.xpath("//input[@id='ctl00_MainContent_username']"));
 		WebElement passWord = driver.findElement(By.xpath("//input[@id='ctl00_MainContent_password']"));
 		
@@ -48,9 +51,9 @@ public class Handling_Dropdown {
 			System.out.println("option value:"+value.get(i).getText());
 		}
 		Thread.sleep(100);
-	}
+	}*/
 
-	
+	}
 	}
 
 
