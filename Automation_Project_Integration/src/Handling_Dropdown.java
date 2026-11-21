@@ -18,7 +18,7 @@ public class Handling_Dropdown {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "E:\\AutomationTesting\\Download\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.google.com");
+		driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/Login.aspx");
 		System.out.println(driver.getTitle());
 		
 		
